@@ -5,20 +5,26 @@ interface Project {
   title: string;
   description: string;
   tags: string[];
+  githubUrl?: string;
+  demoUrl?: string;
 }
 
 const projects: Project[] = [
-  {
-    title: "Farm2Home",
-    description:
-      "A full-stack e-commerce platform connecting farmers and consumers using React, TypeScript, Supabase Auth, PostgreSQL, and Edge Functions. Features include cart management, order tracking, and automated email notifications.",
-    tags: ["React", "TypeScript", "Supabase", "PostgreSQL", "Edge Functions"],
-  },
   {
     title: "InterviewAI",
     description:
       "An AI-powered interview preparation platform built using React, TypeScript, Vite, Tailwind CSS, and Supabase. Includes mock interviews, AI scoring, feedback reports, readiness analysis, PDF export, and automated email results.",
     tags: ["React", "TypeScript", "Vite", "Tailwind CSS", "Supabase", "AI"],
+    githubUrl: "https://github.com/BoddigaSaikrishna/Interview.AI.git",
+    demoUrl: "https://interview-ai-uqva.onrender.com/",
+  },
+  {
+    title: "Farm2Home",
+    description:
+      "A full-stack e-commerce platform connecting farmers and consumers using React, TypeScript, Supabase Auth, PostgreSQL, and Edge Functions. Features include cart management, order tracking, and automated email notifications.",
+    tags: ["React", "TypeScript", "Supabase", "PostgreSQL", "Edge Functions"],
+    githubUrl: "https://github.com/BoddigaSaikrishna/Farm2Home",
+    demoUrl: "#",
   },
 ];
 
@@ -57,18 +63,30 @@ const ProjectsSection = () => (
                 {project.title}
               </h3>
               <div className="flex items-center gap-3">
-                <motion.div whileHover={{ scale: 1.1, rotate: 5 }} whileTap={{ scale: 0.9 }}>
+                <motion.a 
+                  href={project.githubUrl || "#"}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  whileHover={{ scale: 1.1, rotate: 5 }} 
+                  whileTap={{ scale: 0.9 }}
+                >
                   <Github
                     size={18}
                     className="text-muted-foreground hover:text-primary transition-colors cursor-pointer"
                   />
-                </motion.div>
-                <motion.div whileHover={{ scale: 1.1, rotate: 5 }} whileTap={{ scale: 0.9 }}>
+                </motion.a>
+                <motion.a 
+                  href={project.demoUrl || "#"}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  whileHover={{ scale: 1.1, rotate: 5 }} 
+                  whileTap={{ scale: 0.9 }}
+                >
                   <ExternalLink
                     size={18}
                     className="text-muted-foreground hover:text-primary transition-colors cursor-pointer"
                   />
-                </motion.div>
+                </motion.a>
               </div>
             </div>
 

@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { ArrowDown, FileText, Mail, Code2, Database, Globe, Hexagon } from "lucide-react";
+import { ArrowDown, FileText, Mail, Code2, Database, Globe, Hexagon, Github } from "lucide-react";
 
 const roles = [
   "Software Engineer",
@@ -125,13 +125,31 @@ const HeroSection = () => {
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-          className="max-w-4xl mx-auto"
+          className="max-w-4xl mx-auto flex flex-col items-center"
         >
+          {/* Profile Photo */}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.5, rotate: -4 }}
+            animate={{ opacity: 1, scale: 1, rotate: 0 }}
+            transition={{ duration: 0.7, type: "spring", bounce: 0.4, delay: 0.15 }}
+            className="mb-10"
+          >
+            <div className="relative w-40 sm:w-48 aspect-[3/4] rounded-3xl p-1 bg-gradient-to-tr from-primary via-accent to-accent-warm shadow-[0_0_40px_-10px_rgba(var(--primary),0.5)]">
+              <div className="w-full h-full rounded-[1.35rem] overflow-hidden bg-background border-[3px] border-background">
+                <img 
+                  src="/Photo.png" 
+                  alt="Boddiga Sai Krishna" 
+                  className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+            </div>
+          </motion.div>
+
           <motion.h1
             initial={{ opacity: 0, filter: "blur(10px)" }}
             animate={{ opacity: 1, filter: "blur(0px)" }}
             transition={{ delay: 0.2, duration: 0.8, ease: "easeOut" }}
-            className="text-5xl sm:text-6xl md:text-8xl font-bold tracking-tight mb-6 leading-tight"
+            className="text-5xl sm:text-6xl md:text-8xl font-bold tracking-tight mb-6 leading-tight text-center"
           >
             Hi, I'm <br className="sm:hidden" />
             <span className="gradient-text-animated inline-block pb-2">
@@ -188,11 +206,24 @@ const HeroSection = () => {
               <motion.a
                 whileHover={{ scale: 1.05, backgroundColor: "rgba(255,255,255,0.1)" }}
                 whileTap={{ scale: 0.95 }}
-                href="#"
+                href="/Resume/Sai%20krishna.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex-1 sm:flex-none inline-flex items-center justify-center gap-2 px-6 py-4 rounded-full border border-white/10 glass-card text-foreground font-medium transition-all duration-300 group"
               >
                 <FileText size={18} className="text-muted-foreground group-hover:text-accent-warm transition-colors" />
                 <span>Resume</span>
+              </motion.a>
+              <motion.a
+                whileHover={{ scale: 1.05, backgroundColor: "rgba(255,255,255,0.1)" }}
+                whileTap={{ scale: 0.95 }}
+                href="https://github.com/BoddigaSaikrishna"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex-1 sm:flex-none inline-flex items-center justify-center gap-2 px-6 py-4 rounded-full border border-white/10 glass-card text-foreground font-medium transition-all duration-300 group"
+              >
+                <Github size={18} className="text-muted-foreground group-hover:text-primary transition-colors" />
+                <span>GitHub</span>
               </motion.a>
             </div>
           </motion.div>

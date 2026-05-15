@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Mail, Phone, Linkedin, Send, CheckCircle, AlertCircle, Loader2 } from "lucide-react";
+import { Mail, Phone, Linkedin, Github, Send, CheckCircle, AlertCircle, Loader2 } from "lucide-react";
 
 // ✅ Get your FREE access key from https://web3forms.com/
 // Sign up with bsaikrishnasai48@gmail.com and paste the key here:
@@ -184,6 +184,20 @@ const ContactSection = () => {
                   LinkedIn
                 </p>
                 <p className="text-sm text-foreground">Boddiga Sai Krishna</p>
+              </div>
+            </a>
+            <a
+              href="https://github.com/BoddigaSaikrishna"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="glass-card p-5 flex items-center gap-4 hover:border-foreground/20 transition-all duration-200 block"
+            >
+              <Github size={20} className="text-primary" />
+              <div>
+                <p className="font-mono text-xs text-muted-foreground uppercase tracking-wider">
+                  GitHub
+                </p>
+                <p className="text-sm text-foreground">BoddigaSaikrishna</p>
               </div>
             </a>
             <a
