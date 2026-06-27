@@ -26,6 +26,14 @@ const projects: Project[] = [
     githubUrl: "https://github.com/BoddigaSaikrishna/Farm2Home",
     demoUrl: "#",
   },
+  {
+    title: "TestCase Pro",
+    description:
+      "A comprehensive test case management system featuring a segregated architecture. The frontend is built with React, TypeScript, and Vite, while the backend leverages Express.js and Supabase for secure data management.",
+    tags: ["React", "TypeScript", "Vite", "Express.js", "Supabase"],
+    githubUrl: "https://github.com/BoddigaSaikrishna/Test-Case-Management-System.git",
+    demoUrl: "#",
+  },
 ];
 
 const ProjectsSection = () => (
