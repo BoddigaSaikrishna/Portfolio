@@ -137,7 +137,7 @@ const HeroSection = () => {
             <div className="relative w-40 sm:w-48 aspect-[3/4] rounded-3xl p-1 bg-gradient-to-tr from-primary via-accent to-accent-warm shadow-[0_0_40px_-10px_rgba(var(--primary),0.5)]">
               <div className="w-full h-full rounded-[1.35rem] overflow-hidden bg-background border-[3px] border-background">
                 <img 
-                  src="/Photo.png" 
+                  src="/photo.png" 
                   alt="Boddiga Sai Krishna" 
                   className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500"
                 />
