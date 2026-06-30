@@ -24,7 +24,7 @@ const projects: Project[] = [
       "A full-stack e-commerce platform connecting farmers and consumers using React, TypeScript, Supabase Auth, PostgreSQL, and Edge Functions. Features include cart management, order tracking, and automated email notifications.",
     tags: ["React", "TypeScript", "Supabase", "PostgreSQL", "Edge Functions"],
     githubUrl: "https://github.com/BoddigaSaikrishna/Farm2Home",
-    demoUrl: "#",
+    demoUrl: "https://myfarm2home.vercel.app",
   },
   {
     title: "TestCase Pro",
