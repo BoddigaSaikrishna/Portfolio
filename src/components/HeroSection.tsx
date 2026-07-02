@@ -137,7 +137,7 @@ const HeroSection = () => {
             <div className="relative w-40 sm:w-48 aspect-[3/4] rounded-3xl p-1 bg-gradient-to-tr from-primary via-accent to-accent-warm shadow-[0_0_40px_-10px_rgba(var(--primary),0.5)]">
               <div className="w-full h-full rounded-[1.35rem] overflow-hidden bg-background border-[3px] border-background">
                 <img 
-                  src="/photo.png" 
+                  src="/Photo.png" 
                   alt="Boddiga Sai Krishna" 
                   className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500"
                 />
@@ -206,7 +206,7 @@ const HeroSection = () => {
               <motion.a
                 whileHover={{ scale: 1.05, backgroundColor: "rgba(255,255,255,0.1)" }}
                 whileTap={{ scale: 0.95 }}
-                href="/Resume/Sai%20krishna.pdf"
+                href="/Resume/Resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex-1 sm:flex-none inline-flex items-center justify-center gap-2 px-6 py-4 rounded-full border border-white/10 glass-card text-foreground font-medium transition-all duration-300 group"
