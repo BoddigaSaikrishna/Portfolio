@@ -1,6 +1,6 @@
 # Boddiga Sai Krishna - Developer Portfolio
 
-Welcome to my personal developer portfolio, showcasing my skills, experience, and projects.
+Welcome to my personal developer portfolio, showcasing my Skills, Experience, and Projects.
 
 ## Tech Stack
 - React

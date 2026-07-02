@@ -27,6 +27,10 @@ const certs = [
     name: "AICTE Cloud Computing Foundations Virtual Internship",
     image: "/aicte.png",
   },
+  {
+    name: "ServiceNow Certified Implementation Specialist – Data Foundations (CMDB and CSDM)",
+    image: "/Servicenow.png",
+  },
 ];
 
 const CertificationsSection = () => (
