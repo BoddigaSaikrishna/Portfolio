@@ -8,6 +8,7 @@ import {
   Container,
   FileCode2,
   Braces,
+  Cloud,
 } from "lucide-react";
 
 interface SkillCategory {
@@ -41,6 +42,16 @@ const categories: SkillCategory[] = [
     ],
   },
   {
+    title: "Cloud Computing",
+    skills: [
+      { name: "AWS EC2", icon: <Cloud size={20} /> },
+      { name: "AWS S3", icon: <Cloud size={20} /> },
+      { name: "AWS VPN", icon: <Cloud size={20} /> },
+      { name: "AWS IAM", icon: <Cloud size={20} /> },
+      { name: "DynamoDB", icon: <Database size={20} /> },
+    ],
+  },
+  {
     title: "Tools & Technologies",
     skills: [
       { name: "Git", icon: <GitBranch size={20} /> },
@@ -66,7 +77,7 @@ const SkillsSection = () => (
         </h2>
       </motion.div>
 
-      <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-6">
         {categories.map((cat, ci) => (
           <motion.div
             key={cat.title}
